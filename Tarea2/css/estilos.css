@@ -1,0 +1,57 @@
+form{
+    margin:0 auto;
+	width:90%;
+	padding:1em;
+	border:1px solid #ccc;
+}
+
+form ul{
+    list-style-type:none;
+	padding:0px;
+	margin: 0px;
+}
+
+label{
+    display:inline-block;
+	width:120px;
+	text-align:right; 
+}
+
+input{
+    width:50%;
+	height:20px;
+	border:1px solid #999;
+	margin:3px; 
+}
+
+ul{
+    list-style-type: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#lenguajes{
+	width: 20%;
+	margin-left: 150px;
+	margin-top: -40px;
+}
+
+#añosExp{
+	width: 20%;
+	margin-left: 150px;
+	margin-top: -60px;
+}
+
+#mensaje{
+    display: none;
+	text-align: center;
+}
+
+ul li{
+    padding: 5px;
+}
+

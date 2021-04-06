@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Formulario de contacto</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <fieldset>
+        <legend>Formulario de contacto</legend>
+        <div id="mensaje"></div>
+        <form id="formulario" method="POST" action="#">
+            <ul>
+                <li>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" maxlength="20" placeholder="Ejemplo: Pepito" required>
+                </li>
+                <li>
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" maxlength="20" placeholder="Apellidos: Perez" required>
+                </li>
+                <li>
+                    <label for="rut">RUT</label>
+                    <input type="text" id="rut" name="rut" maxlength="10" placeholder="Ejemplo: 12345678-k" required>
+                </li>
+                <li>
+                    <label for="correo">Correo electronico</label>  
+                    <input type="email" id="email" name="email" maxlength="30" placeholder="Ejemplo: pepito.perez@gmail.com" required>
+                </li>
+                <li>
+                    <label for="telefono">Telefono</label>
+                    <input type="number" id="telefono" name="telefono" placeholder="Ejemplo: 123456789" required>
+                </li>
+
+                 <li>
+                    <label>¿Que lenguajes de Programacion conoces?</label>
+                    <div id="lenguajes">
+                    <label for="Python">Python</label>
+                    <input type="checkbox" id="Python" name="lenguajes">
+
+                    <label for="Java">Java</label>
+                    <input type="checkbox" id="Java" name="lenguajes">
+
+                    <label for="TypeScript">TypeScript</label>
+                    <input type="checkbox" id="TypeScriptbr" name="lenguajes">
+                    
+                    <label for="PHP">PHP</label>
+                    <input type="checkbox" id="PHP" name="lenguajes">
+
+                    <label for="C#">C#</label>
+                    <input type="checkbox" id="C#" name="lenguajes">
+
+                    <label for="C++">C++</label>
+                    <input type="checkbox" id="C++" name="lenguajes">
+                    </div>
+                </li>
+                
+                <li>
+                    <label>¿Cual es tu nivel de conocimiento en programacion?</label>
+                    <input type="range" id="rango" name="rango" min="0" max="100" step="1" value="50" onchange="document.getElementById('outrange').value=value">
+                    <output id="outrange" name="outrange" for="rango">50</output>
+                </li>
+
+                <li>
+                    <label>¿Cuantos años de experiencia laboral tienes?</label>
+
+                    <div id="añosExp">
+                    <label for="1año">1</label>
+                    <input type="radio" name="años" id="1" required>
+
+                    <label for="2año">2</label>
+                    <input type="radio" name="años" id="2">
+                    
+                    <label for="3año">3</label>
+                    <input type="radio" name="años" id="3">
+
+                    <label for="4año">4</label>
+                    <input type="radio" name="años" id="4">
+
+                    <label for="5año">5</label>
+                    <input type="radio" name="años" id="5">
+                    </div>
+                </li>
+
+                <li>
+                    <label for="descripcion">Descripcion breve acerca de usted</label>
+                    <textarea id="descripcion" name="descripcion" maxlength="300" placeholder="Yo Pepito Perez ....." required></textarea>
+                </li>
+                
+                <button type="submit" id="enviar">Enviar datos</button>
+                <button type="button" id="limpiar">Limpiar Datos</button>
+            </ul>
+        </form>
+        </fieldset>
+        <script src="js/app.js" async defer></script>
+    </body>
+</html>
